@@ -1,6 +1,4 @@
-package com.cxq.designPattern.singleton;
-
-import com.cxq.designPattern.singleton.seriable.Seriable;
+package com.cxq.designPattern.singleton.seriable;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

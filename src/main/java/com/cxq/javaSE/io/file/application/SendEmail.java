@@ -9,30 +9,30 @@ import javax.activation.*;
 public class SendEmail
 {
     //收件人邮箱地址
-    private String to; 
+    private String to;
     //发件人邮箱地址
-    private String from; 
+    private String from;
     //SMTP服务器地址
-    private String smtpServer; 
+    private String smtpServer;
     //登录SMTP服务器的用户名
     private String username ;
     //登录SMTP服务器的密码
     private String password ;
     //邮件主题
-    private String subject; 
+    private String subject;
     //邮件正文
-    private String content; 
+    private String content;
     //记录所有附件文件的集合
     List<String> attachments = new ArrayList<String>();
     //无参数的构造器
     public SendEmail()
     {
     }
-    
-    public SendEmail(String to , String from , String smtpServer 
-        , String username , String password 
+
+    public SendEmail(String to , String from , String smtpServer
+        , String username , String password
         , String subject , String content)
-    { 
+    {
         this.to = to;
         this.from = from;
         this.smtpServer = smtpServer;
@@ -110,7 +110,7 @@ public class SendEmail
             {
                 public PasswordAuthentication getPasswordAuthentication()
                 {
-                    return new PasswordAuthentication(username, password); 
+                    return new PasswordAuthentication(username, password);
                 }
             });
         try
@@ -124,7 +124,7 @@ public class SendEmail
             msg.setRecipients(Message.RecipientType.TO , addresses);
             //设置邮件主题
             subject = transferChinese(subject);
-            msg.setSubject(subject);    
+            msg.setSubject(subject);
             //构造Multipart
             Multipart mp = new MimeMultipart();
             //向Multipart添加正文
@@ -185,7 +185,7 @@ public class SendEmail
     	        SimpleDateFormat df = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
     	        String date = df.format(new Date());
     	        sendMail.setContent("  柯尊帅，就问你服不服！（第" + (i + 1) + "次发送，共" + count
-    	        		+ "次）\n\n ---------------------------\n  本邮件由系统自动发出，发送时间：" + date); 
+    	        		+ "次）\n\n ---------------------------\n  本邮件由系统自动发出，发送时间：" + date);
     	        //粘贴附件
 //    	        sendMail.attachfile("E:/‪time.jpg");
     	        if (sendMail.send())

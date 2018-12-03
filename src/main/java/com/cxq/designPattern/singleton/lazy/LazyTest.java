@@ -1,7 +1,4 @@
-package com.cxq.designPattern.singleton;
-
-import com.cxq.designPattern.singleton.lazy.LazyOne;
-import com.cxq.designPattern.singleton.lazy.LazyTwo;
+package com.cxq.designPattern.singleton.lazy;
 
 public class LazyTest {
 

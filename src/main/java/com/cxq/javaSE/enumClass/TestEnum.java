@@ -12,7 +12,7 @@ public class TestEnum {
 		System.out.println(spring);
 		spring.show();
 		System.out.println(spring.getSeasonName());
-		
+
 		System.out.println();
 		//1.values()
 		EnumSeason[] seasons = EnumSeason.values();
@@ -25,13 +25,13 @@ public class TestEnum {
 		EnumSeason sea = EnumSeason.valueOf(str);
 		System.out.println(sea);
 		System.out.println();
-		
+
 		Thread.State[] states = Thread.State.values();
 		for(int i = 0;i < states.length;i++){
 			System.out.println(states[i]);
 		}
 		sea.show();
-		
+
 	}
 }
 interface Info{
@@ -59,27 +59,27 @@ enum EnumSeason implements Info{
 			System.out.println("冬天里的一把火");
 		}
 	};
-	
+
 	private final String seasonName;
 	private final String seasonDesc;
-	
+
 	private EnumSeason(String seasonName,String seasonDesc){
 		this.seasonName = seasonName;
 		this.seasonDesc = seasonDesc;
 	}
-	
+
 	public String getSeasonName() {
 		return seasonName;
 	}
-	
+
 	public String getSeasonDesc() {
 		return seasonDesc;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Season [seasonName=" + seasonName + ", seasonDesc="
 				+ seasonDesc + "]";
 	}
-	
+
 }
