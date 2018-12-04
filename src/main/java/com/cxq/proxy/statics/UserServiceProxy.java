@@ -1,5 +1,6 @@
 package com.cxq.proxy.statics;
 
+import com.cxq.proxy.Constant;
 import com.cxq.proxy.UserService;
 import com.cxq.proxy.UserServiceImpl;
 
@@ -16,9 +17,9 @@ public class UserServiceProxy implements UserService {
 
     @Override
     public void updateUser(String account, String userName) {
-        impl.before();
+        Constant.before();
         this.impl.updateUser(account,userName);
-        impl.after();
+        Constant.after();
     }
 
 }
