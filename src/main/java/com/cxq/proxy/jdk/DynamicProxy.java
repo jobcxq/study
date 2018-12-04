@@ -6,6 +6,9 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+/**
+ * 代理类必须实现 InvocationHandler 接口
+ */
 public class DynamicProxy implements InvocationHandler {
 
     Object object;
