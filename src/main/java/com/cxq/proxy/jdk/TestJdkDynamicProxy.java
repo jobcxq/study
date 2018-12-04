@@ -4,7 +4,7 @@ import com.cxq.proxy.UserManageServiceImpl;
 import com.cxq.proxy.UserService;
 import com.cxq.proxy.UserServiceImpl;
 
-public class TestDynamicProxy {
+public class TestJdkDynamicProxy {
 
     public static void main(String[] args){
 
