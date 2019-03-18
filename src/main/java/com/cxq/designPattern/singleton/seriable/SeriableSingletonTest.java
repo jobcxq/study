@@ -8,24 +8,24 @@ import java.io.ObjectOutputStream;
 /**
  * Created by Tom on 2018/3/8.
  */
-public class SeriableTest {
+public class SeriableSingletonTest {
     public static void main(String[] args) {
 
-        Seriable s1 = null;
-        Seriable s2 = Seriable.getInstance();
+        SeriableSingleton s1 = null;
+        SeriableSingleton s2 = SeriableSingleton.getInstance();
 
         FileOutputStream fos = null;
         try {
-            fos = new FileOutputStream("Seriable.obj");
+            fos = new FileOutputStream("SeriableSingleton.obj");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(s2);
             oos.flush();
             oos.close();
 
 
-            FileInputStream fis = new FileInputStream("Seriable.obj");
+            FileInputStream fis = new FileInputStream("SeriableSingleton.obj");
             ObjectInputStream ois = new ObjectInputStream(fis);
-            s1 = (Seriable)ois.readObject();
+            s1 = (SeriableSingleton)ois.readObject();
             ois.close();
 
             System.out.println(s1);

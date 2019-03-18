@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 
 //反序列化时导致单例破坏
-public class Seriable implements Serializable {
+public class SeriableSingleton implements Serializable {
 
 
     //序列化就是说把内存中的状态通过转换成字节码的形式
@@ -20,13 +20,15 @@ public class Seriable implements Serializable {
     //在转换过程中会重新创建对象new
 
 
-    public  final static Seriable INSTANCE = new Seriable();
-    private Seriable(){}
+    public  final static SeriableSingleton INSTANCE = new SeriableSingleton();
+    private SeriableSingleton(){}
 
-    public static  Seriable getInstance(){
+    public static SeriableSingleton getInstance(){
         return INSTANCE;
     }
 
+    //重写方法，防止序列化入侵：只是覆盖了反序列化出来的对象
+    //之前反序列化出来的对象会被回收，相对安全
     private  Object readResolve(){
         return  INSTANCE;
     }

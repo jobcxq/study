@@ -3,10 +3,6 @@ package com.cxq.designPattern.singleton.register;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Created by Tom on 2018/3/7.
- */
-
 //Spring中的做法，就是用这种注册式单例
 public class BeanFactory {
 
@@ -17,20 +13,20 @@ public class BeanFactory {
 
     //存在线程问题
     public static Object getBean(String className){
-
-        if(!ioc.containsKey(className)){
-            Object obj = null;
-            try {
-                obj = Class.forName(className).newInstance();
-                ioc.put(className,obj);
-            } catch (Exception e) {
-                e.printStackTrace();
+        synchronized (ioc){
+            if(!ioc.containsKey(className)){
+                Object obj = null;
+                try {
+                    obj = Class.forName(className).newInstance();
+                    ioc.put(className,obj);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                return obj;
+            }else{
+                return ioc.get(className);
             }
-            return obj;
-        }else{
-            return ioc.get(className);
         }
-
     }
 
 

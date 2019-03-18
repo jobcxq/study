@@ -7,9 +7,9 @@ public class LazyTest {
         int count = 200000000;
 
         long t1 = System.currentTimeMillis();
-        LazyOne one = null;
+        LazyDoubleCheckSingleton one = null;
         for(int i = 0 ; i < count; i ++){
-            LazyOne lazy = LazyOne.getInstance();
+            LazyDoubleCheckSingleton lazy = LazyDoubleCheckSingleton.getInstance();
             if( i == 0 ){
                 one = lazy;
             }
@@ -21,7 +21,7 @@ public class LazyTest {
         System.out.println(t2-t1);
 
         for(int i = 0 ; i < count; i ++){
-            LazyOne lazy = LazyOne.getInstance1();
+            LazyDoubleCheckSingleton lazy = LazyDoubleCheckSingleton.getInstance();
             if( i == 0 ){
                 one = lazy;
             }
@@ -32,9 +32,9 @@ public class LazyTest {
         long t3 = System.currentTimeMillis();
         System.out.println(t3-t2);
 
-        LazyTwo two = null;
+        LazyInnerClassSingleton two = null;
         for(int i = 0 ; i < count; i ++){
-            LazyTwo lazy = LazyTwo.getInstance();
+            LazyInnerClassSingleton lazy = LazyInnerClassSingleton.getInstance();
             if( i == 0 ){
                 two = lazy;
             }
