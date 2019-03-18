@@ -1,6 +1,6 @@
 package com.cxq.designPattern.factory.simple;
 
-import com.cxq.designPattern.factory.vo.Milk;
+import com.cxq.designPattern.factory.vo.IMilk;
 
 public class SimpleFactoryTest {
 
@@ -10,7 +10,7 @@ public class SimpleFactoryTest {
 	public static void main(String[] args) {
 		SimpleFactory factory = new SimpleFactory();
 		
-		Milk milk = factory.getMilk("伊利");
+		IMilk milk = factory.getMilk("伊利");
 		System.out.println(milk.getMikeName());
 	}
 

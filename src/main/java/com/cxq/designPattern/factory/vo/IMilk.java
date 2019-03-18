@@ -1,6 +1,6 @@
 package com.cxq.designPattern.factory.vo;
 
-public interface Milk {
+public interface IMilk {
 	
 	public String getMikeName();
 	

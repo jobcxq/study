@@ -1,8 +1,8 @@
 package com.cxq.designPattern.factory.function;
 
-import com.cxq.designPattern.factory.vo.Milk;
+import com.cxq.designPattern.factory.vo.IMilk;
 
-public interface MilkFactory {
+public interface IMilkFactory {
 
 	//牛奶配比等公共方法
 	
@@ -10,6 +10,6 @@ public interface MilkFactory {
 	 * 
 	 * @return
 	 */
-	public Milk getMilk();
+	public IMilk getMilk();
 	
 }

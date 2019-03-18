@@ -1,19 +1,19 @@
 package com.cxq.designPattern.factory.simple;
 
-import com.cxq.designPattern.factory.vo.Mengniu;
-import com.cxq.designPattern.factory.vo.Milk;
-import com.cxq.designPattern.factory.vo.Telunsu;
-import com.cxq.designPattern.factory.vo.Yili;
+import com.cxq.designPattern.factory.vo.IMilk;
+import com.cxq.designPattern.factory.vo.MengniuMilk;
+import com.cxq.designPattern.factory.vo.TelunsuMilk;
+import com.cxq.designPattern.factory.vo.YiliMilk;
 
 public class SimpleFactory {
 
-	public Milk getMilk(String name){
+	public IMilk getMilk(String name){
 		if("蒙牛".equals(name)){
-			return new Mengniu();
+			return new MengniuMilk();
 		}else if("特仑苏".equals(name)){
-			return new Telunsu();
+			return new TelunsuMilk();
 		}else if("伊利".equals(name)){
-			return new Yili();
+			return new YiliMilk();
 		}else{
 			System.out.println("无指定的牛奶：" + name);
 			return null;

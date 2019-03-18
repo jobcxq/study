@@ -1,10 +1,10 @@
 package com.cxq.designPattern.factory.vo;
 
-public class Telunsu implements Milk{
+public class MengniuMilk implements IMilk {
 
 	@Override
 	public String getMikeName() {
-		return "特仑苏";
+		return "蒙牛";
 	}
 
 }

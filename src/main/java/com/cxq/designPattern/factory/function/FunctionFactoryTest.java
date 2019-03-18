@@ -7,7 +7,7 @@ public class FunctionFactoryTest {
 	 */
 	public static void main(String[] args) {
 		//工厂方法的模式
-		MilkFactory factory = new TelunsuFactory();
+		IMilkFactory factory = new TelunsuFactory();
 		System.out.println(factory.getMilk().getMikeName());
 		
 		factory = new MengniuFactory();

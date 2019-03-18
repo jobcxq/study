@@ -1,13 +1,13 @@
 package com.cxq.designPattern.factory.function;
 
-import com.cxq.designPattern.factory.vo.Milk;
-import com.cxq.designPattern.factory.vo.Yili;
+import com.cxq.designPattern.factory.vo.IMilk;
+import com.cxq.designPattern.factory.vo.YiliMilk;
 
-public class YiliFactory implements MilkFactory{
+public class YiliFactory implements IMilkFactory {
 
 	@Override
-	public Milk getMilk() {
-		return new Yili();
+	public IMilk getMilk() {
+		return new YiliMilk();
 	}
 
 }
