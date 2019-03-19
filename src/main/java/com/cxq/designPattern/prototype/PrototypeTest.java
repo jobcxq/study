@@ -3,6 +3,9 @@ package com.cxq.designPattern.prototype;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 原型模式
+ */
 public class PrototypeTest {
 
     public static void main(String[] args){
