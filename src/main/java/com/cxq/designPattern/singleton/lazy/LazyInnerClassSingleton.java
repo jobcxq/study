@@ -11,7 +11,7 @@ public class LazyInnerClassSingleton {
 
     private static boolean initialized = false;
 
-    //存在放射的入侵，通过反射会创建多个不同的对象
+    //存在反射的入侵，通过反射会创建多个不同的对象
 //    private LazyInnerClassSingleton(){
 //
 //    }
