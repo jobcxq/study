@@ -17,8 +17,10 @@ public class DynamicProxyTest {
     public static void main(String[] args){
         try {
             Proxy proxy = (Proxy)new Agency().getProxyInstance(new Tenant("陈小钦"));
-            Method method = proxy.getClass().getMethod("tenantHouse",null);
-            method.invoke(proxy);
+//            Method method = proxy.getClass().getMethod("tenantHouse",null);
+//            method.invoke(proxy);
+            Customer customer = (Customer) proxy;
+            customer.tenantHouse();
 
             //保存生成的代理类对象
             //$Proxy0
