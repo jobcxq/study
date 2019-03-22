@@ -12,7 +12,7 @@ import java.lang.reflect.Proxy;
  * @desc JDK动态代理
  * @date 2019/03/21 23:06
  */
-public class DynamicProxyTest {
+public class JdkDynamicProxyTest {
 
     public static void main(String[] args){
         try {
