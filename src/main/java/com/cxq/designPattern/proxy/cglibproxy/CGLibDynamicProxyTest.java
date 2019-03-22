@@ -1,5 +1,7 @@
 package com.cxq.designPattern.proxy.cglibproxy;
 
+import net.sf.cglib.core.DebuggingClassWriter;
+
 /**
  * @author cnxqin
  * @desc cglib动态代理
@@ -8,6 +10,9 @@ package com.cxq.designPattern.proxy.cglibproxy;
 public class CGLibDynamicProxyTest {
 
     public static void main(String[] args){
+
+        //利用 cglib 的代理类可以将内存中的 class 文件写入本地磁盘
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "D:\\IdeaProjects\\log\\cglib_proxy_class/");
 
         Agency agency = new Agency();
 
