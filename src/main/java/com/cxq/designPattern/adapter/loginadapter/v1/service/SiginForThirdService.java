@@ -4,10 +4,10 @@ import com.cxq.designPattern.adapter.loginadapter.ResultMsg;
 
 /**
  * @author cnxqin
- * @desc
+ * @desc 已有 SignService 类的扩展类，来实现新的需求
  * @date 2019/03/26 23:23
  */
-public class SinginForThirdService extends SiginService {
+public class SiginForThirdService extends SiginService {
 
     public ResultMsg loginForQQ(String openId){
         //1、openId是全局唯一，我们可以把它当做是一个用户名(加长)
@@ -31,7 +31,7 @@ public class SinginForThirdService extends SiginService {
     }
 
     public ResultMsg loginForRegist(String username,String password){
-        super.regist(username,null);
+        super.register(username,null);
         return super.login(username,null);
     }
 }

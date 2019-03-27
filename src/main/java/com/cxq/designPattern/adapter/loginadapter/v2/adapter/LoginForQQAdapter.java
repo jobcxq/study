@@ -1,5 +1,6 @@
 package com.cxq.designPattern.adapter.loginadapter.v2.adapter;
 
+import com.cxq.designPattern.adapter.loginadapter.Member;
 import com.cxq.designPattern.adapter.loginadapter.ResultMsg;
 
 /**
@@ -15,6 +16,6 @@ public class LoginForQQAdapter implements LoginAdapter {
 
     @Override
     public ResultMsg login(String id, Object adapter) {
-        return null;
+        return new ResultMsg(200,"登录成功",new Member());
     }
 }

@@ -4,14 +4,24 @@ import com.cxq.designPattern.adapter.loginadapter.ResultMsg;
 
 /**
  * @author cnxqin
- * @desc
+ * @desc 通用代码的抽象，在适配器模式中，不需要一定存在
  * @date 2019/03/26 23:25
- * 在适配器里面，这个接口是可有可无
  */
 public interface  LoginAdapter {
 
+    /**
+     * 适配器的类型检查
+     * @param adapter
+     * @return
+     */
     boolean support(Object adapter);
 
+    /**
+     *
+     * @param id
+     * @param adapter
+     * @return
+     */
     ResultMsg login(String id, Object adapter);
 
 }

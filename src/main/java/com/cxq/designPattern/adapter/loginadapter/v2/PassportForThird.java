@@ -4,7 +4,7 @@ import com.cxq.designPattern.adapter.loginadapter.ResultMsg;
 
 /**
  * @author cnxqin
- * @desc 需要进行适配的接口
+ * @desc 需要进行扩展的新功能类
  * @date 2019/03/26 23:24
  */
 public interface PassportForThird {

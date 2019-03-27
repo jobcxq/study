@@ -5,7 +5,7 @@ import com.cxq.designPattern.adapter.loginadapter.ResultMsg;
 
 /**
  * @author cnxqin
- * @desc
+ * @desc 已有的功能类
  * @date 2019/03/26 23:23
  */
 public class SiginService {
@@ -15,7 +15,7 @@ public class SiginService {
      * @param password
      * @return
      */
-    public ResultMsg regist(String username,String password){
+    public ResultMsg register(String username,String password){
         return  new ResultMsg(200,"注册成功",new Member());
     }
 
@@ -27,6 +27,6 @@ public class SiginService {
      * @return
      */
     public ResultMsg login(String username,String password){
-        return null;
+        return new ResultMsg(200,"登录成功", new Member());
     }
 }
