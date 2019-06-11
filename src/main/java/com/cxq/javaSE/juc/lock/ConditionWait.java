@@ -1,4 +1,4 @@
-package com.cxq.javaSE.juc;
+package com.cxq.javaSE.juc.lock;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

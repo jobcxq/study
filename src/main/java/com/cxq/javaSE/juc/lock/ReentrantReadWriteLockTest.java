@@ -1,4 +1,4 @@
-package com.cxq.javaSE.juc;
+package com.cxq.javaSE.juc.lock;
 
 import java.util.HashMap;
 import java.util.Map;
