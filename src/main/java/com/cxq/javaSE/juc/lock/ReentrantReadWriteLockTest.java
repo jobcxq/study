@@ -18,23 +18,28 @@ public class ReentrantReadWriteLockTest {
     static Map map = new HashMap();
     static int cocunt = 0;
 
-    public static String read(String key){
+    public static void read(String key){
         readLock.lock();
         try {
-            System.out.println("读操作获取锁，执行读取操作...");
-            return (String) map.get(key);
-        }finally {
+            System.out.println("读操作获取锁，执行读取操作：" + (String) map.get(key));
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
             System.out.println("**********读操作结束**********\n");
             readLock.unlock();
         }
     }
 
-    public static String write(String key, String value){
+    public static void write(String key, String value){
         writeLock.lock();
         try{
             System.out.println("写操作获得锁，写入值：" + value);
-            return (String) map.put(key,value);
-        }finally {
+            map.put(key,value);
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
             System.out.println("==========写操作结束==========\n");
             writeLock.unlock();
         }
@@ -43,11 +48,11 @@ public class ReentrantReadWriteLockTest {
     public static void main(String[] args){
         for(int i = 0; i < 1000 ; i ++){
             new Thread(() -> {
-                String result = ReentrantReadWriteLockTest.write("key","value" + " : " + (cocunt ++));
+                ReentrantReadWriteLockTest.write("key","value" + " : " + (cocunt ++));
             }).start();
 
             new Thread(() -> {
-                String result = ReentrantReadWriteLockTest.read("key");
+                ReentrantReadWriteLockTest.read("key");
             }).start();
         }
     }
