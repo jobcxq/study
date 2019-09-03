@@ -1,4 +1,4 @@
-package com.cxq.javaSE.baseGrammar;
+package com.cxq.javaSE.base;
 
 /**
  * @author cnxqin
@@ -22,6 +22,12 @@ public class TestInteger {
         System.out.println(f.equals(g));
 
         System.out.println(new Integer(10) == new Integer(10));
+
+
+        char aaa = 4;
+        byte bbb = 5;
+
+        System.out.println(aaa + bbb);
 
     }
 

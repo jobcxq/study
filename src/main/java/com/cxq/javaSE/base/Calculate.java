@@ -1,4 +1,4 @@
-package com.cxq.javaSE.baseGrammar;
+package com.cxq.javaSE.base;
 
 public class Calculate {
 
