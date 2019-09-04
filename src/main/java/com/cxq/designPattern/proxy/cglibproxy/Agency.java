@@ -35,6 +35,7 @@ public class Agency implements MethodInterceptor {
      * @return
      */
     public <T>T getProxyInstance(T customer) {
+//        return (T)Enhancer.create((Class) customer,this);
         //相当于Proxy，代理的工具类
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(customer.getClass());

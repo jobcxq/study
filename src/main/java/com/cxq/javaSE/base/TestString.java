@@ -6,11 +6,18 @@ public class TestString {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String str = "1001001001";
-		int i = Integer.parseInt(str);
-		System.out.println(i);
 
+		String a = "a", b = "b", c = "c", d = "a";
+		System.out.println(a == d);
+		swap(a, b);
+		System.out.println("a=" + a + ", b=" + b);
+
+	}
+
+	public static void swap(String a, String b){
+		String tmp = a;
+		a = b;
+		b = tmp;
 	}
 
 }
