@@ -7,23 +7,27 @@ package com.cxq.java.jvm.classload;
  */
 public class Dog extends Animal {
 
+
+    static Eye leftEye = new Eye("Dog's Left Eye"); //4
+
     static {
-        System.out.println("Dog 静态代码块");
+        System.out.println("Dog 静态代码块");    //5
     }
 
+    static Eye rightEye = new Eye("Dog's Right Eye");   //6
+
     {
-        System.out.println(this);
-        System.out.println("Dog 构造器前代码块");
+        System.out.println("Dog 构造器前代码块 A");    //10
     }
 
 
     Dog(){
         System.out.println("Dog 构造器");
-    }
+    }   //12
 
 
     {
-        System.out.println("Dog 构造器后代码块 B");
+        System.out.println("Dog 构造器后代码块 B");    //11
     }
 
 }

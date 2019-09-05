@@ -7,12 +7,30 @@ package com.cxq.java.jvm.classload;
  */
 public class ClassLoadTest {
 
+    //准备阶段，初始化为 null，初始化阶段调用构造器
+    private static ClassLoadTest sington = new ClassLoadTest();
+
+    //准备阶段赋值为 0
+    private static int x;
+    private static int y = 0;   //初始化阶段赋值为0，即 1 -> 0
+
+    private ClassLoadTest(){
+        x ++;
+        y ++;
+    }
 
     public static void main(String[] args){
+        //类加载顺序测试一
+        //x = 1, y = 0
+        System.out.println("x = " + x + ", y = " + y);
+        System.out.println("------------------");
+
+        //类加载顺序测试二
         ClassLoadTest test = new ClassLoadTest();
         Dog dog = new Dog();
+        System.out.println("------------------");
+
         Animal animal = new Animal();
-        System.out.println(dog);
         test.override("dog",dog);
         test.override("animal",animal);
 
