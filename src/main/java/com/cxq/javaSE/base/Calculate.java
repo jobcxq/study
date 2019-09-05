@@ -2,7 +2,7 @@ package com.cxq.javaSE.base;
 
 public class Calculate {
 
-	public static void main(String[] 黄鹏程){
+	public static void main(String[] args){
 		int a = 5,b = 5;
 		a = add1(a,b);
 		System.out.println("a=" + a);
