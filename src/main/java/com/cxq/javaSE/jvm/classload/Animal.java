@@ -1,4 +1,4 @@
-package com.cxq.javaSE.jvm;
+package com.cxq.javaSE.jvm.classload;
 
 /**
  * @author 8000654471
