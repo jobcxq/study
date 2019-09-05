@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.delegate;
+package com.cxq.java.designpattern.delegate;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.singleton.register;
+package com.cxq.java.designpattern.singleton.register;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.template;
+package com.cxq.java.designpattern.template;
 
 /**
  * @author cnxqin

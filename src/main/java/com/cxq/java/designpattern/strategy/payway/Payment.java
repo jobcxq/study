@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.strategy.payway;
+package com.cxq.java.designpattern.strategy.payway;
 
 /**
  * @author cnxqin

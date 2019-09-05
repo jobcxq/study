@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.observer.myobserver;
+package com.cxq.java.designpattern.observer.myobserver;
 
 /**
  * @author cnxqin

@@ -10,7 +10,7 @@ public class GetConstructor {
 
 	@Test
 	public void test1() throws Exception{
-		String className = "com.cxq.javaSE.reflection.bean.Person";
+		String className = "com.cxq.java.reflection.bean.Person";
 		Class clazz = Class.forName(className);
 		//创建对应的运行时类的对象。使用newInstance()，实际上就是调用了运行时类的空参的构造器。
 		//要想能够创建成功：①要求对应的运行时类要有空参的构造器。②构造器的权限修饰符的权限要足够。
@@ -21,7 +21,7 @@ public class GetConstructor {
 	
 	@Test
 	public void test2() throws ClassNotFoundException{
-		String className = "com.cxq.javaSE.reflection.bean.Person";
+		String className = "com.cxq.java.reflection.bean.Person";
 		Class clazz = Class.forName(className);
 		
 		Constructor[] cons = clazz.getDeclaredConstructors();
@@ -33,7 +33,7 @@ public class GetConstructor {
 	//调用指定的构造器,创建运行时类的对象
 	@Test
 	public void test3() throws Exception{
-		String className = "com.cxq.javaSE.reflection.bean.Person";
+		String className = "com.cxq.java.reflection.bean.Person";
 		Class clazz = Class.forName(className);
 		
 		Constructor cons = clazz.getDeclaredConstructor(String.class,int.class);

@@ -1,6 +1,6 @@
-package com.cxq.javaSE.designpattern.factory.function;
+package com.cxq.java.designpattern.factory.function;
 
-import com.cxq.javaSE.designpattern.factory.vo.IMilk;
+import com.cxq.java.designpattern.factory.vo.IMilk;
 
 public interface IMilkFactory {
 

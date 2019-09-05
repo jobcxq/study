@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.proxy.jdkproxy.myjdkproxy;
+package com.cxq.java.designpattern.proxy.jdkproxy.myjdkproxy;
 
 import javax.tools.JavaCompiler;
 import javax.tools.StandardJavaFileManager;
@@ -65,8 +65,8 @@ public class MyProxy {
 
     private static String generateSrc(Class<?>[] interfaces){
         interfaces[0].getName().getClass();
-        StringBuffer sb = new StringBuffer("package com.cxq.javaSE.designpattern.proxy.jdkproxy.myjdkproxy;").append(ln)
-//                .append("import com.cxq.javaSE.designpattern.proxy.jdkproxy.Customer;").append(ln)
+        StringBuffer sb = new StringBuffer("package com.cxq.java.designpattern.proxy.jdkproxy.myjdkproxy;").append(ln)
+//                .append("import com.cxq.java.designpattern.proxy.jdkproxy.Customer;").append(ln)
                 .append("import ").append(interfaces[0].getName()).append(";").append(ln)
                 .append("import java.lang.reflect.*;").append(ln)
                 .append("public class $Proxy0 implements " + interfaces[0].getName() + "{").append(ln)

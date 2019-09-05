@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.singleton.lazy;
+package com.cxq.java.designpattern.singleton.lazy;
 
 //特点：在外部类被调用的时候内部类才会被加载
 //内部类一定是要在方法调用之前初始化

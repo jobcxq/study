@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.singleton.seriable;
+package com.cxq.java.designpattern.singleton.seriable;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

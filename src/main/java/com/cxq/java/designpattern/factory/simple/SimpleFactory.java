@@ -1,9 +1,9 @@
-package com.cxq.javaSE.designpattern.factory.simple;
+package com.cxq.java.designpattern.factory.simple;
 
-import com.cxq.javaSE.designpattern.factory.vo.IMilk;
-import com.cxq.javaSE.designpattern.factory.vo.MengniuMilk;
-import com.cxq.javaSE.designpattern.factory.vo.TelunsuMilk;
-import com.cxq.javaSE.designpattern.factory.vo.YiliMilk;
+import com.cxq.java.designpattern.factory.vo.IMilk;
+import com.cxq.java.designpattern.factory.vo.MengniuMilk;
+import com.cxq.java.designpattern.factory.vo.TelunsuMilk;
+import com.cxq.java.designpattern.factory.vo.YiliMilk;
 
 public class SimpleFactory {
 

@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.proxy.jdkproxy.myjdkproxy;
+package com.cxq.java.designpattern.proxy.jdkproxy.myjdkproxy;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

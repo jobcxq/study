@@ -58,7 +58,7 @@ public class TestClass {
 	public void test2(){
 		Person p = new Person();
 		Class clazz = p.getClass();	//通过运行时类的对象，调用其getClass()，返回其运行时类。
-		System.out.println(clazz);	//class com.cxq.javaSE.reflection.bean.Person
+		System.out.println(clazz);	//class com.cxq.java.reflection.bean.Person
 	}
 	
 	/**
@@ -77,7 +77,7 @@ public class TestClass {
 		System.out.println("clazz2:" + clazz2.getName());
 		
 		//3.通过Class的静态方法forName获取（反射的动态性）
-		String className = "com.cxq.javaSE.reflection.bean.Person";
+		String className = "com.cxq.java.reflection.bean.Person";
 		Class clazz3 = Class.forName(className);
 		System.out.println("clazz3:" + clazz3.getName());
 		
@@ -94,12 +94,12 @@ public class TestClass {
 	@Test
 	public void test4() throws Exception{
 		//1.文件在包中
-		String fileName = "com/cxq/javaSE/reflection/aboutClass/jdbc.properties";
+		String fileName = "com/cxq/java/reflection/aboutClass/jdbc.properties";
 		ClassLoader classLoader = this.getClass().getClassLoader();
 //		InputStream  is = classLoader.getResourceAsStream(fileName);
 		//2.文件在项目中
 //		FileInputStream is = new FileInputStream(new File("jdbc.properties"));
-		FileInputStream is = new FileInputStream(new File("src/com/cxq/javaSE/reflection/aboutClass/jdbc.properties"));
+		FileInputStream is = new FileInputStream(new File("src/com/cxq/java/reflection/aboutClass/jdbc.properties"));
 		
 		Properties pro = new Properties();
 		pro.load(is);

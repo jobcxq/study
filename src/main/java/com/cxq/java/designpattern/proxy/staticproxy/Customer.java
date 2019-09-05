@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.proxy.staticproxy;
+package com.cxq.java.designpattern.proxy.staticproxy;
 
 /**
  * @author cnxqin

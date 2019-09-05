@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.factory.abstr;
+package com.cxq.java.designpattern.factory.abstr;
 
 public class MengniuYogurt implements IYogurt {
     @Override

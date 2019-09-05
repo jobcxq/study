@@ -1,7 +1,7 @@
-package com.cxq.javaSE.designpattern.proxy.jdkproxy.myjdkproxy;
+package com.cxq.java.designpattern.proxy.jdkproxy.myjdkproxy;
 
-import com.cxq.javaSE.designpattern.proxy.jdkproxy.Customer;
-import com.cxq.javaSE.designpattern.proxy.jdkproxy.Tenant;
+import com.cxq.java.designpattern.proxy.jdkproxy.Customer;
+import com.cxq.java.designpattern.proxy.jdkproxy.Tenant;
 
 /**
  * @author cnxqin

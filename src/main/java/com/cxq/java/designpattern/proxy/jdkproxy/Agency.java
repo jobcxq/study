@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.proxy.jdkproxy;
+package com.cxq.java.designpattern.proxy.jdkproxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

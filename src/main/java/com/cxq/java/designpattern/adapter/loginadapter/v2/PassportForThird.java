@@ -1,6 +1,6 @@
-package com.cxq.javaSE.designpattern.adapter.loginadapter.v2;
+package com.cxq.java.designpattern.adapter.loginadapter.v2;
 
-import com.cxq.javaSE.designpattern.adapter.loginadapter.ResultMsg;
+import com.cxq.java.designpattern.adapter.loginadapter.ResultMsg;
 
 /**
  * @author cnxqin

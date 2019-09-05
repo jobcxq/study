@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.singleton.lazy;
+package com.cxq.java.designpattern.singleton.lazy;
 
 public class LazyTest {
 

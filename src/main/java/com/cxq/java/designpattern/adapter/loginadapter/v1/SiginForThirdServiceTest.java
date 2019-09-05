@@ -1,7 +1,7 @@
-package com.cxq.javaSE.designpattern.adapter.loginadapter.v1;
+package com.cxq.java.designpattern.adapter.loginadapter.v1;
 
 
-import com.cxq.javaSE.designpattern.adapter.loginadapter.v1.service.SiginForThirdService;
+import com.cxq.java.designpattern.adapter.loginadapter.v1.service.SiginForThirdService;
 
 /**
  * @author cnxqin

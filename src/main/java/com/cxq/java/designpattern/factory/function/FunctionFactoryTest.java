@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.factory.function;
+package com.cxq.java.designpattern.factory.function;
 
 public class FunctionFactoryTest {
 

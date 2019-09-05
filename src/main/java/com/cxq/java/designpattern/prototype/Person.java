@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.prototype;
+package com.cxq.java.designpattern.prototype;
 
 import java.io.Serializable;
 

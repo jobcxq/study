@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.decorator;
+package com.cxq.java.designpattern.decorator;
 
 /**
  * @author cnxqin

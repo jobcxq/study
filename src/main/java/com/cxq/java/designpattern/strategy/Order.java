@@ -1,7 +1,7 @@
-package com.cxq.javaSE.designpattern.strategy;
+package com.cxq.java.designpattern.strategy;
 
-import com.cxq.javaSE.designpattern.strategy.payway.PayStrategy;
-import com.cxq.javaSE.designpattern.strategy.payway.Payment;
+import com.cxq.java.designpattern.strategy.payway.PayStrategy;
+import com.cxq.java.designpattern.strategy.payway.Payment;
 
 /**
  * @author cnxqin

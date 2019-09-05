@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.adapter.loginadapter;
+package com.cxq.java.designpattern.adapter.loginadapter;
 
 /**
  * @author cnxqin

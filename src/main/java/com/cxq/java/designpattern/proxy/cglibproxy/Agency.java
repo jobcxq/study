@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.proxy.cglibproxy;
+package com.cxq.java.designpattern.proxy.cglibproxy;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.singleton.lazy;
+package com.cxq.java.designpattern.singleton.lazy;
 
 //懒汉模式：在用户使用时才初始化,线程安全
 public class LazyDoubleCheckSingleton {

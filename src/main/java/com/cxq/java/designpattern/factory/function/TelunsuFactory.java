@@ -1,7 +1,7 @@
-package com.cxq.javaSE.designpattern.factory.function;
+package com.cxq.java.designpattern.factory.function;
 
-import com.cxq.javaSE.designpattern.factory.vo.IMilk;
-import com.cxq.javaSE.designpattern.factory.vo.TelunsuMilk;
+import com.cxq.java.designpattern.factory.vo.IMilk;
+import com.cxq.java.designpattern.factory.vo.TelunsuMilk;
 
 public class TelunsuFactory implements IMilkFactory {
 

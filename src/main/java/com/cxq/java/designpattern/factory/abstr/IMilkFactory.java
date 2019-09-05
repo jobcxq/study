@@ -1,6 +1,6 @@
-package com.cxq.javaSE.designpattern.factory.abstr;
+package com.cxq.java.designpattern.factory.abstr;
 
-import com.cxq.javaSE.designpattern.factory.vo.IMilk;
+import com.cxq.java.designpattern.factory.vo.IMilk;
 
 /**
  * 抽象工厂，用户的主入口

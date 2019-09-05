@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.proxy.jdkproxy;
+package com.cxq.java.designpattern.proxy.jdkproxy;
 
 /**
  * @author cnxqin

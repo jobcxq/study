@@ -1,6 +1,6 @@
-package com.cxq.javaSE.designpattern.observer.guava;
+package com.cxq.java.designpattern.observer.guava;
 
-import com.cxq.javaSE.designpattern.observer.Message;
+import com.cxq.java.designpattern.observer.Message;
 import com.google.common.eventbus.Subscribe;
 
 /**

@@ -1,6 +1,6 @@
-package com.cxq.javaSE.designpattern.observer.myobserver;
+package com.cxq.java.designpattern.observer.myobserver;
 
-import com.cxq.javaSE.designpattern.observer.Message;
+import com.cxq.java.designpattern.observer.Message;
 
 /**
  * @author cnxqin

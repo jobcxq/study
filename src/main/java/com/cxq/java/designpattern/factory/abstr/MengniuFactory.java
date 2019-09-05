@@ -1,7 +1,7 @@
-package com.cxq.javaSE.designpattern.factory.abstr;
+package com.cxq.java.designpattern.factory.abstr;
 
-import com.cxq.javaSE.designpattern.factory.vo.IMilk;
-import com.cxq.javaSE.designpattern.factory.vo.MengniuMilk;
+import com.cxq.java.designpattern.factory.vo.IMilk;
+import com.cxq.java.designpattern.factory.vo.MengniuMilk;
 
 public class MengniuFactory implements IMilkFactory {
 

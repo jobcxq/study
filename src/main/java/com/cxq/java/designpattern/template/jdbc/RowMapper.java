@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.template.jdbc;
+package com.cxq.java.designpattern.template.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

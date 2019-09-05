@@ -1,6 +1,6 @@
-package com.cxq.javaSE.designpattern.observer.jdk;
+package com.cxq.java.designpattern.observer.jdk;
 
-import com.cxq.javaSE.designpattern.observer.Message;
+import com.cxq.java.designpattern.observer.Message;
 
 import java.util.Observable;
 import java.util.Observer;

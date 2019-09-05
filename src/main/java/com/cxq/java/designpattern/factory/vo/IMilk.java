@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.factory.vo;
+package com.cxq.java.designpattern.factory.vo;
 
 public interface IMilk {
 	

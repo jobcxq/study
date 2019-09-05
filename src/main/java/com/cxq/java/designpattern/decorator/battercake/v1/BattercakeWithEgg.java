@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.decorator.battercake.v1;
+package com.cxq.java.designpattern.decorator.battercake.v1;
 
 /**
  * @author cnxqin

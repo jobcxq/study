@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.strategy;
+package com.cxq.java.designpattern.strategy;
 
 /**
  * @author cnxqin

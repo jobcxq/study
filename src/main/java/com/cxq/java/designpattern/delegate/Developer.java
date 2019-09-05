@@ -1,4 +1,4 @@
-package com.cxq.javaSE.designpattern.delegate;
+package com.cxq.java.designpattern.delegate;
 
 /**
  * @author cnxqin
