@@ -21,16 +21,11 @@ public class StaticDispatch {
 
     public static void main(String[] args){
         StaticDispatch dispatch = new StaticDispatch();
-        Human man = new Man();
+        Human man = new Man();      //Human 为变量的静态类型，Man 为实际类型
         Human woman = new Woman();
-        //静态分派，
+        //静态分派，虚拟机重载时通过参数的静态类型来作为判定依据（编译器在编译阶段就可以确定）
         dispatch.sayHello(man);     //hello human
         dispatch.sayHello(woman);   //hello human
-
-        Man man1 = new Man();
-        Woman woman1 = new Woman();
-        dispatch.sayHello(man1);     //hello human
-        dispatch.sayHello(woman1);   //hello human
 
     }
 
