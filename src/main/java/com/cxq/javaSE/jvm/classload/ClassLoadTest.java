@@ -2,7 +2,7 @@ package com.cxq.javaSE.jvm.classload;
 
 /**
  * @author 8000654471
- * @desc
+ * @desc 类加载顺序
  * @date 2019/9/4 9:11
  */
 public class ClassLoadTest {
