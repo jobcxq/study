@@ -2,7 +2,7 @@ package com.cxq.java.jvm.dispatch;
 
 /**
  * @author 8000654471
- * @desc 静态分派
+ * @desc 静态分派 - 重载
  * @date 2019/9/5 9:27
  */
 public class StaticDispatch {
@@ -30,16 +30,17 @@ public class StaticDispatch {
 
     }
 
+    static class Human{
+
+    }
+
+    static class Man extends Human {
+
+    }
+
+    static class Woman extends Human {
+
+    }
+
 }
 
-class Human{
-
-}
-
-class Man extends Human{
-
-}
-
-class Woman extends Human{
-
-}
