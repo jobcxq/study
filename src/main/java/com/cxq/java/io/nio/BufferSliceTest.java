@@ -1,4 +1,4 @@
-package com.cxq.java.io.nio.test;
+package com.cxq.java.io.nio;
 
 import java.nio.ByteBuffer;
 
