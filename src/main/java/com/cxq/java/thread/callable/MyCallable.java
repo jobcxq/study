@@ -27,7 +27,10 @@ public class MyCallable implements Callable<String> {
 //        }
 
         ExecutorService executorService = Executors.newFixedThreadPool(1);
+        Executors.newSingleThreadExecutor();
+        Executors.newCachedThreadPool();
         Future future = executorService.submit(callable);
+        executorService.execute(() -> {});
         try {
             String result = (String) future.get();
             System.out.println("result = " + result + " " + Thread.currentThread().getName());

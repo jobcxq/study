@@ -6,7 +6,7 @@ import com.cxq.java.designpattern.autoreg.vo.RequestBase;
 
 /**
  * @author cnxqin
- * @desc
+ * @desc 投保查询-可使用策略模式，新增其他接口时，直接继承抽象类即可
  * @date 2019/09/14 15:24
  */
 public class ApplicationQueryServiceImpl extends AbstractPlatformService
@@ -16,6 +16,7 @@ public class ApplicationQueryServiceImpl extends AbstractPlatformService
     protected Object parseResponse(String responseData) {
         //解析返回数据
         System.out.println("【投保查询】 解析响应数据");
+        //不同地区的特殊处理，可以使用委派模式
         return null;
     }
 
