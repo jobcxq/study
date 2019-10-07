@@ -21,6 +21,13 @@ public class ThreadLocalTest {
         }
     };
 
+    static ThreadLocal<Integer> num2 = new ThreadLocal<Integer>(){
+        @Override
+        protected Integer initialValue() {
+            return 3;   //初始值，若是对象的引用，仍引用的同一个对象。
+        }
+    };
+
     static ThreadLocal<User> use = new ThreadLocal<User>(){
         @Override
         protected User initialValue() {
