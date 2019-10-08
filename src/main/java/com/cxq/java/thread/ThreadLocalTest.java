@@ -4,6 +4,7 @@ import com.cxq.java.vo.User;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author cnxqin
@@ -14,36 +15,44 @@ public class ThreadLocalTest {
 
 //    private static int num = 0;
 
-    static ThreadLocal<Integer> num = new ThreadLocal<Integer>(){
+    static ThreadLocal<Integer> num = new ThreadLocal<Integer>() {
         @Override
         protected Integer initialValue() {
             return 0;   //初始值，若是对象的引用，仍引用的同一个对象。
         }
     };
 
-    static ThreadLocal<Integer> num2 = new ThreadLocal<Integer>(){
-        @Override
-        protected Integer initialValue() {
-            return 3;   //初始值，若是对象的引用，仍引用的同一个对象。
-        }
-    };
-
-    static ThreadLocal<User> use = new ThreadLocal<User>(){
+    static ThreadLocal<User> use = new ThreadLocal<User>() {
         @Override
         protected User initialValue() {
-            return new User(1l, "threadlocal","tl");//需要重新 new 一个对象
+            return new User(1l, "threadlocal", "tl");//需要重新 new 一个对象
         }
     };
 
-    public static void main(String[] args){
+    // 原子性整数，包含下一个分配的线程Thread ID
+    private static final AtomicInteger nextId = new AtomicInteger(0);
 
-        for(int i = 0; i < 5; i ++) {
+    // 每一个线程对应的Thread ID
+    private static final ThreadLocal<Integer> threadId = new ThreadLocal<Integer>() {
+        @Override
+        protected Integer initialValue() {
+            return nextId.getAndIncrement();
+        }
+    };
+
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 5; i++) {
             new Thread(() -> {
-                int value = num.get() + 5;num.set(33);use.set(null);
+                int value = num.get() + 5;
                 System.out.println(Thread.currentThread().getName() + " : " + value);
-                System.out.println(Thread.currentThread().getName() + " : " + use.get());
+//                System.out.println(Thread.currentThread().getName() + " : " + use.get());
+                System.out.println(Thread.currentThread().getName() + " threadId : " + threadId.get());
             }, "thread" + i).start();
         }
+
+        num.set(100);
+        System.out.println(Thread.currentThread().getName() + " : " + num.get());
 
     }
 
