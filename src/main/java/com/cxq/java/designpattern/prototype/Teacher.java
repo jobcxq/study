@@ -47,18 +47,18 @@ public class Teacher extends Person implements Cloneable, Serializable {
     @Override
     protected Object clone() throws CloneNotSupportedException {
         try{
-            ByteArrayOutputStream bos = new ByteArrayOutputStream();
-            ObjectOutputStream os = new ObjectOutputStream(bos);
-            os.writeObject(this);
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        ObjectOutputStream os = new ObjectOutputStream(bos);
+        os.writeObject(this);
 
-            ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
-            ObjectInputStream is = new ObjectInputStream(bis);
+        ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
+        ObjectInputStream is = new ObjectInputStream(bis);
 
-            return (Teacher) is.readObject();
+        return (Teacher) is.readObject();
 
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+    }catch (Exception e){
+        e.printStackTrace();
+    }
 
         return null;
     }
