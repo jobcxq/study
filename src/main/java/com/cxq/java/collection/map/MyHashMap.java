@@ -1,4 +1,4 @@
-package com.cxq.java.map;
+package com.cxq.java.collection.map;
 
 import java.util.HashMap;
 import java.util.Map;

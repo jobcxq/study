@@ -36,7 +36,6 @@ public class TestString {
 //		md.update(buffer);
 //
 //		System.out.println(bufferToHex(md.digest()));
-
 	}
 
 	private static void switchNull(String str){
