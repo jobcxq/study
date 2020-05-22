@@ -13,7 +13,7 @@ public class SelectTest {
 
 //        Class.forName("com.mysql.jdbc.Driver");
         Class.forName("com.mysql.cj.jdbc.Driver");
-        String url = "jdbc:mysql://CentOS_01:3306/study";
+        String url = "jdbc:mysql://localhost:3306/user?useSSL=false&serverTimezone=Hongkong&characterEncoding=utf-8&autoReconnect=true";
         String username = "root";
         String password = "1234";
 
@@ -23,7 +23,7 @@ public class SelectTest {
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(sql);
         while (resultSet.next()) {
-            System.out.println(resultSet.getString("name"));
+            System.out.println(resultSet.getString("user_name"));
         }
     }
 

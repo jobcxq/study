@@ -23,7 +23,7 @@ public class JdkDynamicProxyTest {
             //保存生成的代理类对象
             //$Proxy0
             byte [] bytes = ProxyGenerator.generateProxyClass("$Proxy0",new Class[]{Customer.class});
-            FileOutputStream os = new FileOutputStream("D:\\IdeaProjects\\log\\$Proxy0.class");
+            FileOutputStream os = new FileOutputStream("D:\\Java\\IdeaProjects\\log\\$Proxy0.class");
             os.write(bytes);
             os.close();
 

@@ -1,5 +1,7 @@
 package com.cxq.java.vo;
 
+import java.io.FileNotFoundException;
+
 /**
  * @author cnxqin
  * @desc
@@ -13,6 +15,12 @@ public class User {
     private String password;
     private String phoneNo;
     private String sex;
+
+    protected String hello;
+
+    protected User sayHello () throws FileNotFoundException {
+        return null;
+    }
 
     public User(){
 

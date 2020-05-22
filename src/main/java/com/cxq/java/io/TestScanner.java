@@ -13,9 +13,13 @@ public class TestScanner {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
+        char[] ch = new char[]{};
+        Integer.parseInt("");
 //        System.out.println(scanner.nextLine());
         while(scanner.hasNext()){
             System.out.println(scanner.nextLine());
         }
+
+
     }
 }
