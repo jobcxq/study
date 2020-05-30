@@ -90,6 +90,24 @@ public class AttackSingleton {
     }
 
 
+    /**
+     * 克隆破坏单例，对于实现了 Cloneable 接口的实体类
+     * 重写 clone 方法，返回单例对象或抛出异常
+     */
+    @Test
+    public void byClone(){
+        HungrySingleton singleton = HungrySingleton.getInstance();
+        System.out.println(singleton);
+
+        try {
+            System.out.println(singleton.clone());
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
 
 
 }
