@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  */
 public class MyClassLoader extends ClassLoader {
 
-    private final static String BASE_PATH = "D:/IdeaProjects/JavaSE/lib/";
+    private final static String BASE_PATH = "D:/IdeaProjects/study/lib/";
 
     @Override
     public Class<?> loadClass(String name) throws ClassNotFoundException {
